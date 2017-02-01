@@ -28,5 +28,14 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.zdd.maventest:maventest:1.1'
     testCompile 'junit:junit:4.12'
 }
+
+repositories {
+    jcenter()
+    maven{
+        url "https://raw.githubusercontent.com/gepriniusce/hello-maven/master"
+    }
+}
+
